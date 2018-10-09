@@ -24,6 +24,7 @@ protocol MainPresenterProtocol: class {
     var router: MainRouterProtocol! { set get }
     func configureTableViewRows() -> Int
     func configureCellForRow(row: Int, type: DataType) -> String
+    func settingsButtonTapped()
 //    func configureView()
 //    func closeButtonClicked()
 //    func urlButtonClicked(with urlString: String?)
@@ -35,7 +36,7 @@ protocol MainInteractorProtocol: class {
 }
 
 protocol MainRouterProtocol: class {
-//    func closeCurrentViewController()
+    func showSettingsScene()
 }
 
 protocol MainConfiguratorProtocol: class {

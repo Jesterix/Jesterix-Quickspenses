@@ -17,6 +17,10 @@ class MainRouter: MainRouterProtocol {
         self.viewController = viewController
     }
     
+    func showSettingsScene() {
+        viewController.performSegue(withIdentifier: viewController.selfToSettingsSegueName, sender: nil)
+    }
+    
 //    func closeCurrentViewController() {
 //        viewController.dismiss(animated: true, completion: nil)
 //    }

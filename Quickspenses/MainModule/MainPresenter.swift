@@ -44,13 +44,14 @@ class MainPresenter: MainPresenterProtocol {
         }
     }
     
+    func settingsButtonTapped() {
+        router.showSettingsScene()
+    }
+    
 //    func configureView() {
 //        view.setUrlButtonTitle(with: interactor.urlRatesSource)
 //    }
     
-//    func closeButtonClicked() {
-//        router.closeCurrentViewController()
-//    }
     
 //    func urlButtonClicked(with urlString: String?) {
 //        if let url = urlString {

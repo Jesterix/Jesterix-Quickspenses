@@ -22,6 +22,8 @@ class ExpenseCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        purposeField.autocorrectionType = .no
+        fromField.autocorrectionType = .no
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

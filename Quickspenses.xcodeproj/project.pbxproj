@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		31A533B87330011F10FF9E40 /* Pods_Quickspenses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBC4EDE95D9C17B2E958495 /* Pods_Quickspenses.framework */; };
+		5E3AE03D216CA9DF00649FC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE03C216CA9DF00649FC0 /* Constants.swift */; };
+		5E3AE041216CCCC800649FC0 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE040216CCCC800649FC0 /* SettingsInteractor.swift */; };
+		5E3AE043216CCCD700649FC0 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE042216CCCD700649FC0 /* SettingsPresenter.swift */; };
+		5E3AE045216CCCE200649FC0 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE044216CCCE200649FC0 /* SettingsRouter.swift */; };
+		5E3AE047216CCCF400649FC0 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE046216CCCF400649FC0 /* SettingsConfigurator.swift */; };
+		5E3AE049216CCD0100649FC0 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE048216CCD0100649FC0 /* SettingsProtocols.swift */; };
+		5E3AE04C216CCD5500649FC0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE04B216CCD5500649FC0 /* SettingsViewController.swift */; };
+		5E3AE050216CD95600649FC0 /* EditListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE04F216CD95600649FC0 /* EditListPresenter.swift */; };
+		5E3AE052216CD96A00649FC0 /* EditListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE051216CD96A00649FC0 /* EditListRouter.swift */; };
+		5E3AE054216CD97D00649FC0 /* EditListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE053216CD97D00649FC0 /* EditListConfigurator.swift */; };
+		5E3AE056216CD99100649FC0 /* EditListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE055216CD99100649FC0 /* EditListProtocols.swift */; };
+		5E3AE058216CD9A700649FC0 /* EditListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE057216CD9A700649FC0 /* EditListViewController.swift */; };
+		5E3AE05B216CD9E100649FC0 /* EditListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE05A216CD9E100649FC0 /* EditListInteractor.swift */; };
 		5EE44D44216A272700999AE0 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE44D43216A272700999AE0 /* MainProtocols.swift */; };
 		5EE44D46216A27E300999AE0 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE44D45216A27E300999AE0 /* MainConfigurator.swift */; };
 		5EE44D49216A2C2600999AE0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE44D48216A2C2600999AE0 /* MainPresenter.swift */; };
@@ -31,6 +44,19 @@
 
 /* Begin PBXFileReference section */
 		441A8A90589CF6A98F705C46 /* Pods-Quickspenses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickspenses.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quickspenses/Pods-Quickspenses.debug.xcconfig"; sourceTree = "<group>"; };
+		5E3AE03C216CA9DF00649FC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E3AE040216CCCC800649FC0 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		5E3AE042216CCCD700649FC0 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		5E3AE044216CCCE200649FC0 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		5E3AE046216CCCF400649FC0 /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		5E3AE048216CCD0100649FC0 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		5E3AE04B216CCD5500649FC0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5E3AE04F216CD95600649FC0 /* EditListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListPresenter.swift; sourceTree = "<group>"; };
+		5E3AE051216CD96A00649FC0 /* EditListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListRouter.swift; sourceTree = "<group>"; };
+		5E3AE053216CD97D00649FC0 /* EditListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListConfigurator.swift; sourceTree = "<group>"; };
+		5E3AE055216CD99100649FC0 /* EditListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListProtocols.swift; sourceTree = "<group>"; };
+		5E3AE057216CD9A700649FC0 /* EditListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListViewController.swift; sourceTree = "<group>"; };
+		5E3AE05A216CD9E100649FC0 /* EditListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditListInteractor.swift; sourceTree = "<group>"; };
 		5EE44D43216A272700999AE0 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
 		5EE44D45216A27E300999AE0 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		5EE44D48216A2C2600999AE0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
@@ -74,6 +100,32 @@
 				FBBC4EDE95D9C17B2E958495 /* Pods_Quickspenses.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E3AE04A216CCD0700649FC0 /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				5E3AE04B216CCD5500649FC0 /* SettingsViewController.swift */,
+				5E3AE040216CCCC800649FC0 /* SettingsInteractor.swift */,
+				5E3AE042216CCCD700649FC0 /* SettingsPresenter.swift */,
+				5E3AE044216CCCE200649FC0 /* SettingsRouter.swift */,
+				5E3AE046216CCCF400649FC0 /* SettingsConfigurator.swift */,
+				5E3AE048216CCD0100649FC0 /* SettingsProtocols.swift */,
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		5E3AE059216CD9B100649FC0 /* EditListModule */ = {
+			isa = PBXGroup;
+			children = (
+				5E3AE057216CD9A700649FC0 /* EditListViewController.swift */,
+				5E3AE05A216CD9E100649FC0 /* EditListInteractor.swift */,
+				5E3AE04F216CD95600649FC0 /* EditListPresenter.swift */,
+				5E3AE051216CD96A00649FC0 /* EditListRouter.swift */,
+				5E3AE053216CD97D00649FC0 /* EditListConfigurator.swift */,
+				5E3AE055216CD99100649FC0 /* EditListProtocols.swift */,
+			);
+			path = EditListModule;
 			sourceTree = "<group>";
 		};
 		5EE44D47216A29F000999AE0 /* MainModule */ = {
@@ -126,6 +178,9 @@
 			children = (
 				5EE618C32121AC65001ACE29 /* AppDelegate.swift */,
 				5EE44D4E216A332E00999AE0 /* CoreDataManager.swift */,
+				5E3AE03C216CA9DF00649FC0 /* Constants.swift */,
+				5E3AE059216CD9B100649FC0 /* EditListModule */,
+				5E3AE04A216CCD0700649FC0 /* SettingsModule */,
 				5EE44D47216A29F000999AE0 /* MainModule */,
 				5EE618C72121AC65001ACE29 /* Main.storyboard */,
 				5EE618D82121B28B001ACE29 /* ExpenseCell.swift */,
@@ -259,21 +314,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EE44D5B216A375F00999AE0 /* Purpose+CoreDataClass.swift in Sources */,
+				5E3AE03D216CA9DF00649FC0 /* Constants.swift in Sources */,
 				5EE44D59216A375F00999AE0 /* Wallet+CoreDataClass.swift in Sources */,
+				5E3AE054216CD97D00649FC0 /* EditListConfigurator.swift in Sources */,
+				5E3AE045216CCCE200649FC0 /* SettingsRouter.swift in Sources */,
 				5EE618D92121B28B001ACE29 /* ExpenseCell.swift in Sources */,
 				5EE618C62121AC65001ACE29 /* MainViewController.swift in Sources */,
 				5EE44D52216A353B00999AE0 /* Transaction+CoreDataClass.swift in Sources */,
+				5E3AE056216CD99100649FC0 /* EditListProtocols.swift in Sources */,
 				5EE44D5A216A375F00999AE0 /* Wallet+CoreDataProperties.swift in Sources */,
+				5E3AE049216CCD0100649FC0 /* SettingsProtocols.swift in Sources */,
+				5E3AE05B216CD9E100649FC0 /* EditListInteractor.swift in Sources */,
 				5EE618CC2121AC65001ACE29 /* Quickspenses.xcdatamodeld in Sources */,
+				5E3AE041216CCCC800649FC0 /* SettingsInteractor.swift in Sources */,
 				5EE44D44216A272700999AE0 /* MainProtocols.swift in Sources */,
+				5E3AE050216CD95600649FC0 /* EditListPresenter.swift in Sources */,
+				5E3AE047216CCCF400649FC0 /* SettingsConfigurator.swift in Sources */,
 				5EE44D5C216A375F00999AE0 /* Purpose+CoreDataProperties.swift in Sources */,
 				5EE618C42121AC65001ACE29 /* AppDelegate.swift in Sources */,
+				5E3AE04C216CCD5500649FC0 /* SettingsViewController.swift in Sources */,
 				5EE44D49216A2C2600999AE0 /* MainPresenter.swift in Sources */,
 				5EE44D46216A27E300999AE0 /* MainConfigurator.swift in Sources */,
+				5E3AE052216CD96A00649FC0 /* EditListRouter.swift in Sources */,
+				5E3AE058216CD9A700649FC0 /* EditListViewController.swift in Sources */,
 				5EE44D53216A353B00999AE0 /* Transaction+CoreDataProperties.swift in Sources */,
 				5EE44D4B216A2CD000999AE0 /* MainInteractor.swift in Sources */,
 				5EE44D4F216A332F00999AE0 /* CoreDataManager.swift in Sources */,
 				5EE44D4D216A2D8000999AE0 /* MainRouter.swift in Sources */,
+				5E3AE043216CCCD700649FC0 /* SettingsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

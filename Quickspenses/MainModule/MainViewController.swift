@@ -12,6 +12,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var presenter: MainPresenterProtocol!
     let configurator: MainConfiguratorProtocol = MainConfigurator()
+    let selfToSettingsSegueName = "toSettingsSegue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +22,32 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.configureTableViewRows()
+        return presenter.configureTableViewRows() + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseCell", for: indexPath) as! ExpenseCell
         cell.selectionStyle = .none
-        cell.dateField.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.date)
-        cell.sumField.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.sum)
-        cell.purposeField.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.purpose)
-        cell.fromField.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.wallet)
-        cell.commentTextView.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.comment)
+        if indexPath.row < indexPath.count - 1 {
+            cell.dateField.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.date)
+            cell.sumField.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.sum)
+            cell.purposeField.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.purpose)
+            cell.fromField.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.wallet)
+            cell.commentTextView.text = presenter.configureCellForRow(row: indexPath.row, type: DataType.comment)
+        } else {
+            let notSavedTextColor = UIColor.blue
+            cell.dateField.text = ""
+            cell.dateField.textColor = notSavedTextColor
+            cell.sumField.text = ""
+            cell.sumField.textColor = notSavedTextColor
+            cell.purposeField.text = ""
+            cell.purposeField.textColor = notSavedTextColor
+            cell.fromField.text = ""
+            cell.fromField.textColor = notSavedTextColor
+            cell.commentTextView.text = ""
+            cell.commentTextView.textColor = notSavedTextColor
+        }
         return cell
     }
     
@@ -41,13 +57,19 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func addTapped(_ sender: Any) {
-        //мтоды презентера?
+        //методы презентера?
+    }
+    
+    @IBAction func settingsTapped(_ sender: Any) {
+        //методы презентера?
+        presenter.settingsButtonTapped()
     }
     
 
-
 }
 
+
+//0) сделать доп.ячейку, в которой можно вводить новые данные, данные вводятся синим цветом, при нажатии на Add добавляются в базу, цвет текста становится черным и появляется новая пустая строка.
 //1) реализовать выбор из категории расходов
 //2) то же для источника денег
 //3) сетап, в котором можно наполнить базу категорий, предположительно 3 символа включая эмодзи + описание текстовое, которое показывают в pickerView
