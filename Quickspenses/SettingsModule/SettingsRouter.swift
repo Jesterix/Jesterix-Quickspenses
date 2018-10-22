@@ -17,5 +17,18 @@ class SettingsRouter: SettingsRouterProtocol {
         self.viewController = viewController
     }
     
+    func showEditListScene(objectToEdit: Entities){
+        viewController.performSegue(withIdentifier: viewController.settingsToEditListSegueName, sender: objectToEdit)
+    }
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? EditListViewProtocol {
+            if let objectToEdit = sender as? Entities {
+                vc.listToEdit = objectToEdit.rawValue
+            }
+        } else {
+            print("segue error")
+        }
+    }
     
 }

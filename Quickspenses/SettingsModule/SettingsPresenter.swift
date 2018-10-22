@@ -17,4 +17,9 @@ class SettingsPresenter: SettingsPresenterProtocol {
     required init(view: SettingsViewProtocol) {
         self.view = view
     }
+    
+    func editButtonTapped(objectToEdit: Entities){
+        router.showEditListScene(objectToEdit: objectToEdit)
+    }
+    
 }

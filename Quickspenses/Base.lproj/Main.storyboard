@@ -222,10 +222,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit List View Controller-->
         <scene sceneID="iHK-T8-eX0">
             <objects>
-                <viewController id="Gte-zO-Dx1" sceneMemberID="viewController">
+                <viewController id="Gte-zO-Dx1" customClass="EditListViewController" customModule="Quickspenses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lk2-Bn-FL0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,6 +243,9 @@
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjE-rh-82u">
                                 <rect key="frame" x="330" y="582" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="Gte-zO-Dx1" eventType="touchUpInside" id="UGR-jp-d1g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -259,6 +262,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kKo-yY-du8"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="TjE-rh-82u" id="9z2-wX-Uve"/>
+                        <outlet property="addTextField" destination="aFQ-St-cOA" id="hKc-3G-iGm"/>
+                        <outlet property="listTableView" destination="FRm-32-yvX" id="j7E-xn-z3i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFG-Qq-TR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

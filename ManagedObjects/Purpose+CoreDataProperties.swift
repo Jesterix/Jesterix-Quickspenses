@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 
-extension Purpose {
+extension Purpose : Nameable  {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Purpose> {
         return NSFetchRequest<Purpose>(entityName: "Purpose")

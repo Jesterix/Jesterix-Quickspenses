@@ -17,7 +17,7 @@ enum DataType : String {
 }
 
 protocol MainViewProtocol: class {
-//    func setUrlButtonTitle(with title: String)
+
 }
 
 protocol MainPresenterProtocol: class {
@@ -25,14 +25,12 @@ protocol MainPresenterProtocol: class {
     func configureTableViewRows() -> Int
     func configureCellForRow(row: Int, type: DataType) -> String
     func settingsButtonTapped()
-//    func configureView()
-//    func closeButtonClicked()
-//    func urlButtonClicked(with urlString: String?)
+
 }
 
 protocol MainInteractorProtocol: class {
     var transactions : [Transaction] { get }
-//    func openUrl(with urlString: String)
+
 }
 
 protocol MainRouterProtocol: class {

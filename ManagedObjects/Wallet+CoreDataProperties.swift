@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 
-extension Wallet {
+extension Wallet : Nameable {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Wallet> {
         return NSFetchRequest<Wallet>(entityName: "Wallet")
@@ -20,3 +20,4 @@ extension Wallet {
     @NSManaged public var name: String?
 
 }
+

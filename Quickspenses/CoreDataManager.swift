@@ -39,6 +39,22 @@ class CoreDataManager {
         return fetchedResultsController
     }
     
+    func deleteNameableObject(entityName: String, nameOfObjectToDelete: String) {
+        let context = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        fetchRequest.predicate = NSPredicate(format: "name == %@", nameOfObjectToDelete)
+
+        do {
+            let objects = try context.fetch(fetchRequest)
+            for object in objects as! [NSManagedObject] {
+                context.delete(object)
+            }
+            try context.save()
+        } catch _ {
+            // error handling
+        }
+    }
+    
     // MARK: - Core Data stack
     
     lazy var persistentContainer: NSPersistentContainer = {
